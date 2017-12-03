@@ -1,0 +1,156 @@
+
+
+.how-left{
+  align-self:flex-end;
+  flex-basis: 43%;
+
+  @media only screen and (max-width: $bp-small){
+    display: none;
+  }
+  img{
+    width: 130%;
+    height: 90%;
+
+
+    @media only screen and (max-width: $bp-large-1){
+      width: 110%;
+      height: 80%;
+    }
+
+    @media only screen and (max-width: $bp-large-2){
+      width: 100%;
+      height: 70%;
+    }
+    @media only screen and (max-width: $bp-medium){
+      width: 100%;
+      height: 70%;
+    }
+
+
+
+  }
+
+}
+
+.how-right--first,
+.how-right--second,
+.how-right--third{
+  display: flex;
+  align-items:flex-start;
+
+
+  margin-bottom: 4rem;
+
+  @media only screen and (max-width: $bp-small){
+
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    padding: 3rem;
+    margin-bottom: 5rem;
+  }
+}
+
+.how-right{
+
+  display: flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:flex-start;
+
+  color:white;
+
+  padding-left: 5rem;
+
+  @media only screen and (max-width: $bp-small){
+    align-items:center;
+    justify-content:center;
+    padding: 0;
+  }
+
+  h1{
+    display: flex;
+    width: 7.7rem;
+    height: 7.69rem;
+    border: solid 5px var(--aqua-marine);
+    border-radius:100%;
+    justify-content:center;
+    align-items:center;
+
+    margin-right: 10rem;
+
+
+    @media only screen and (max-width: $bp-large-1){
+        margin-right: 5rem;
+        border: solid 3px var(--aqua-marine);
+    }
+    @media only screen and (max-width: $bp-large-2){
+      margin-right: 3rem;
+    }
+
+    @media only screen and (max-width: $bp-small){
+      border: solid 4px var(--aqua-marine);
+      margin-right: 0;
+    }
+  }
+
+  h2{
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 1.45;
+    letter-spacing: -1.2px;
+    text-align: left;
+    color: var(--aqua-marine);
+
+    margin-bottom: 3rem;
+
+    @media only screen and (max-width: $bp-small){
+      font-size: 3.8rem;
+      font-weight: 600;
+      line-height: 1.33;
+      letter-spacing: -1.2px;
+      text-align: center;
+      color: var(--aqua-green);
+
+    }
+  }
+
+  span{
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 1.45;
+    letter-spacing: -1.2px;
+    color: #ffffff;
+
+
+    @media only screen and (max-width: $bp-small){
+      width: 32.5rem;
+      height: 7.2rem;
+      font-size: 2.3rem;
+      font-weight: 600;
+      line-height: 1.71;
+      letter-spacing: -1.2px;
+      text-align: center;
+      color: #ffffff;
+
+    }
+
+    @media only screen and (max-width: $bp-smaller){
+      font-size: 2.8rem;
+    }
+  }
+
+  &--first__set,
+  &--second__set,
+  &--third__set{
+    display: flex;
+    flex-direction:column;
+
+    padding-top: 2rem;
+  }
+
+
+}
+

@@ -1,0 +1,153 @@
+
+
+:root {
+  --aqua-marine: #47efb2;
+  --pine-green: #082123;
+  --almost-black: #060c08;
+  --aqua-green: #19e298;
+}
+
+//FONT-SIZE
+$default-font-size: 1.6rem;
+
+$bp-largest: 100em; //1600
+
+$bp-large-1: 76.875em; //1230px
+$bp-large-2: 62.5em; //1000px;
+
+$bp-medium: 51.25em; //820px
+$bp-small: 46.8755em; //750px;
+$bp-smaller: 31.25em; //500px;
+$bp-smallest: 25em; //400px;
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before{
+  box-sizing: inherit;
+}
+
+
+html{
+  box-sizing: border-box;
+  font-size: 62.5%; //10/16  1rem = 10px;
+
+  height: 100%;
+
+
+  @media only screen and (max-width: $bp-large-1){
+    font-size: 55%;
+  }
+
+  @media only screen and (max-width: $bp-large-2){
+    font-size: 50%;
+  }
+
+
+  @media only screen and (max-width: $bp-small){
+    font-size: 40%;
+  }
+  @media only screen and (max-width: $bp-smaller){
+    font-size: 35%;
+  }
+
+  @media only screen and (max-width: $bp-smallest){
+    font-size: 30%;
+  }
+
+
+
+
+}
+
+body{
+  font-family: AppleSDGothicNeo, sans-serif;
+}
+
+
+.main-section{
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/main-bg.png);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-attachment: fixed;
+
+  position: relative;
+  outline: none;
+  border: none;
+
+  @media only screen and (max-width: $bp-small){
+    background-image: url(../img/mobile-bg.png);
+  }
+
+}
+
+
+nav{
+  width: 100%;
+  height: 6rem;
+  background-color: rgba(255, 255, 255, 0.21);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  z-index: 30;
+
+
+  @media only screen and (max-width: $bp-small){
+    visibility: hidden;
+  }
+
+}
+
+.how-it-works{
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+
+
+  @media only screen and (max-width: $bp-small){
+    height: auto;
+    display: inline-block;
+
+    background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.73)),
+    url(../img/mobile-iphone-mockup2.png);
+    background-blend-mode: screen;
+    background-size: contain;
+    background-repeat:   no-repeat;
+    background-position: center bottom;
+  }
+}
+.carousel{
+  outline: none;
+  border: none;
+  background-image: url(../img/how-it-works-bg.png);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat:   no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 83.8rem;
+  position: relative;
+
+  @media only screen and (max-width: $bp-small){
+    background-image: url(../img/mobile-audience1.png);
+    height: 100vh;
+  }
+
+}
+.footer{
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+
+  display: flex;
+  align-items:center;
+  justify-content:center;
+}
