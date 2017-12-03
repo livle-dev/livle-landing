@@ -9,12 +9,13 @@
 
 
   @media only screen and (min-width: $bp-largest){
-    margin-top: 7rem;
+    transform: translateY(7rem);
   }
 
-  @media only screen and (max-width: $bp-large-1) {
-
+  @media only screen and (max-width: $bp-smaller) {
+    transform: translateY(-3rem);
   }
+
 
 
     .main-left{
@@ -24,6 +25,7 @@
         display:inline-block;
         width: 42rem;
         height: 80rem;
+
 
         margin-right: 10rem;
         @media only screen and (max-width: $bp-large-1){
@@ -42,7 +44,7 @@
         }
 
 
-        @media only screen and (min-width: $bp-medium){
+        @media only screen and (min-width: $bp-small){
           margin-top: 30%;
         }
       }
@@ -69,8 +71,10 @@
         text-align: left;
         color: #fff;
 
+
+
         @media only screen and (max-width: $bp-small){
-          font-size: 10rem;
+          font-size: 8rem;
           font-weight: 600;
           letter-spacing: -0.8px;
           text-align: center;
@@ -94,6 +98,8 @@
     letter-spacing: -1.2px;
     text-align: left;
     color: #fff;
+
+
 
 
     @media only screen and (max-width: $bp-small){

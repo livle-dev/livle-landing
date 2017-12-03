@@ -25,6 +25,7 @@
 
 
     @media only screen and (max-width: $bp-small){
+      font-size: 2.5rem;
       justify-content:center;
       align-items:stretch;
     }
@@ -59,6 +60,12 @@
       }
 
     &-2{
+
+      &__address{
+        @media only screen and (max-width: 1024px){
+          margin-bottom: 1rem;
+        }
+      }
 
       & >*{
         @media only screen and (max-width: $bp-small){
