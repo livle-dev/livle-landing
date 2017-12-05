@@ -65,6 +65,4 @@ $(document).ready(function () {
     },{
         offset: '15%'
     });
-
-
 });

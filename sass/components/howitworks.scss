@@ -3,6 +3,9 @@
 .how-left{
   align-self:flex-end;
 
+  @media only screen and  (min-width: $bp-small) and (max-width: 1350px){
+    width: 50%;
+  }
   @media only screen and (max-width: $bp-small){
     display: none;
   }
@@ -10,6 +13,7 @@
     width: 100%;
     height: auto;
     object-fit: cover;
+
 
     @media only screen and (max-width: $bp-large-1){
       width: 90%;
@@ -20,10 +24,13 @@
       width: 80%;
       height: auto;
     }
+
     @media only screen and (max-width: $bp-medium){
       width: 70%;
       height: auto;
     }
+
+
 
 
 
@@ -64,8 +71,6 @@
   color:white;
 
 
-
-
   @media only screen and (max-width: $bp-small){
     align-items:center;
     justify-content:center;
@@ -73,11 +78,13 @@
   }
 
 
-
   @media only screen and (min-width: $bp-largest){
     padding: 5rem 15rem;
     margin-right: 15rem;
   }
+
+
+
 
   &--first,
   &--second,
@@ -112,11 +119,11 @@
     }
 
     @media only screen and (max-width: $bp-small){
-      width: 5rem;
-      height: 5rem;
-      font-size: 5rem;
+      width: 6.5rem;
+      height: 6.5rem;
+      font-size: 4rem;
 
-      border: solid 4px var(--aqua-marine);
+      border: solid 3px var(--aqua-marine);
       margin-right: 0;
     }
   }

@@ -156,19 +156,27 @@
 
   &-left{
 
-    width: 50rem;
-    height: 50rem;
-    margin-left: 5rem;
+    width: 50rem !important;
+    height: 50rem !important;
+    margin-left: 5rem !important;
 
 
+    @media only screen and (min-width: $bp-medium) and (max-width: $bp-large-2){
+      width: 35rem !important;
+      height: 35rem !important;
+    }
+    @media only screen and (min-width: $bp-small) and (max-width: $bp-medium){
+        width: 45rem !important;
+        height: 45rem !important;
+
+
+    }
 
 
     @media only screen and (max-width: $bp-small){
       visibility: hidden;
       display:none;
     }
-
-
 
     @media only screen and (max-width: $bp-large-1){
       margin-right: 10rem;
@@ -186,8 +194,12 @@
 
       object-fit: cover;
       overflow: hidden;
-      @media only screen and (max-width: $bp-large-1){
-        transform: scale(.9);
+      @media only screen and (min-width: $bp-medium) and (max-width: $bp-large-2){
+        transform: scale(.8);
+
+      }
+      @media only screen and (min-width: $bp-small) and (max-width: $bp-medium){
+        transform: scale(.6);
 
       }
 
