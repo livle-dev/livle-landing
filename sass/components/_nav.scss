@@ -9,14 +9,15 @@
   @media only screen and (max-width: $bp-small){
     margin-left: 0;
   }
+  @media only screen and (max-width: $bp-smaller){
+    margin-left: 2rem;
+  }
   @media only screen and (max-width: $bp-smallest){
     width: 12rem;
     height: auto;
   }
 
-  @media only screen and (max-width: $bp-smaller){
-    margin-left: 2rem;
-  }
+
 
 
 

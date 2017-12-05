@@ -7,11 +7,10 @@
   align-items: center;
   margin: auto 0;
 
+  outline: none;
 
 
-  @media only screen and (min-width: $bp-largest){
-    transform: translateY(7rem);
-  }
+
 
   @media only screen and (max-width: $bp-small){
     transform: translateY(-8rem)
@@ -20,6 +19,9 @@
     transform: translateY(-5rem);
   }
 
+  @media only screen and (min-width: $bp-largest){
+    transform: translateY(7rem);
+  }
 
 
     .main-left{

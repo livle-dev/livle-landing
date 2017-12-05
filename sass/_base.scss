@@ -29,6 +29,11 @@ $height-point-2: 37.5em; //600px;
   padding: 0;
 }
 
+*:focus {
+  outline: 0;
+  outline: none;
+}
+
 *,
 *::after,
 *::before{
@@ -36,12 +41,13 @@ $height-point-2: 37.5em; //600px;
 }
 html, body {
   width: auto !important;
-  overflow-x: hidden !important;
+  //overflow-x: hidden !important;
 }
 
 
 html{
-
+  outline: none;
+  border: none;
 
   box-sizing: border-box;
   font-size: 62.5%; //10/16  1rem = 10px;
@@ -80,6 +86,8 @@ html{
 
 body{
   font-family: AppleSDGothicNeo,'Lato', sans-serif;
+  outline: none;
+  border: none;
 }
 
 
@@ -95,9 +103,6 @@ body{
 
 
   position: relative;
-
-
-
 
 
   @media only screen and (min-width: $bp-smaller) and (max-width: $bp-small) and (max-height: $height-point-2){
@@ -204,7 +209,7 @@ nav{
 }
 .footer{
   width: 100%;
-  height: 100vh;
+  height: 80rem;
   background-color: black;
 
   display: flex;

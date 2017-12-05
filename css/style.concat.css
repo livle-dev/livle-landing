@@ -1736,13 +1736,13 @@ nav {
   @media only screen and (max-width: 46.8755em) {
     .logo {
       margin-left: 0; } }
+  @media only screen and (max-width: 31.25em) {
+    .logo {
+      margin-left: 2rem; } }
   @media only screen and (max-width: 25em) {
     .logo {
       width: 12rem;
       height: auto; } }
-  @media only screen and (max-width: 31.25em) {
-    .logo {
-      margin-left: 2rem; } }
 
 .nav__mobile {
   display: flex;
@@ -1912,8 +1912,10 @@ nav {
       padding: 0; } }
   @media only screen and (min-width: 100em) {
     .how-right {
-      padding: 5rem 15rem;
-      margin-right: 15rem; } }
+      padding-top: 5rem;
+      padding-bottom: 5rem;
+      padding-right: 15rem;
+      margin-right: 10rem; } }
   @media only screen and (max-width: 51.25em) {
     .how-right--first, .how-right--second, .how-right--third {
       margin-bottom: 0; } }
