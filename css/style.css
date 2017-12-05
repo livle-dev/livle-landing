@@ -638,10 +638,6 @@ nav {
   @media only screen and (max-width: 46.8755em) {
     .carousel-inner {
       display: flex;
-      position: absolute;
-      top: 60%;
-      left: 50%;
-      transform: translate(-50%, -50%);
       justify-content: center; } }
 
 .card-set {
@@ -652,7 +648,6 @@ nav {
   border: none; }
   @media only screen and (min-width: 25em) and (max-width: 31.25em) and (min-height: 46.875em) {
     .card-set {
-      margin-top: 3rem;
       padding: 0;
       padding-top: 1.5rem; } }
   @media only screen and (min-width: 46.8755em) and (max-width: 76.875em) {
@@ -660,7 +655,7 @@ nav {
       transform: translateX(-12rem); } }
   @media only screen and (max-width: 46.8755em) {
     .card-set > * {
-      margin-bottom: 15%; } }
+      margin-bottom: 2%; } }
   @media only screen and (max-width: 46.8755em) {
     .card-set {
       margin-top: 3rem;
@@ -671,7 +666,7 @@ nav {
       padding-top: 2rem; } }
   @media only screen and (max-width: 31.25em) {
     .card-set {
-      padding-top: 5rem; } }
+      padding-top: 0; } }
   .card-set .card-right {
     display: flex;
     flex-direction: column;
@@ -742,9 +737,11 @@ nav {
       letter-spacing: -.12rem; }
       @media only screen and (max-width: 46.8755em) {
         .card-set .card-left__title {
+          font-size: 7rem;
           text-align: center; } }
       @media only screen and (max-width: 31.25em) {
         .card-set .card-left__title {
+          font-size: 6rem;
           text-align: center; } }
       .card-set .card-left__title--1 {
         line-height: 0.5;
@@ -781,12 +778,12 @@ nav {
       line-height: 1.45; }
       @media only screen and (max-width: 46.8755em) {
         .card-set .card-left__detail {
-          font-size: 5rem;
+          font-size: 3rem;
           text-align: center; } }
       @media only screen and (max-width: 31.25em) {
         .card-set .card-left__detail {
           text-align: center;
-          font-size: 4rem; } }
+          font-size: 2.5rem; } }
       @media only screen and (max-width: 31.25em) {
         .card-set .card-left__detail--1 {
           margin-bottom: 2rem; } }
