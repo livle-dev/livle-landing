@@ -34,10 +34,15 @@ $height-point-2: 37.5em; //600px;
 *::before{
   box-sizing: inherit;
 }
-
+html, body {
+  width: auto !important;
+  overflow-x: hidden !important;
+}
 
 
 html{
+
+
   box-sizing: border-box;
   font-size: 62.5%; //10/16  1rem = 10px;
 
@@ -74,7 +79,7 @@ html{
 }
 
 body{
-  font-family: AppleSDGothicNeo, sans-serif;
+  font-family: AppleSDGothicNeo,'Lato', sans-serif;
 }
 
 
@@ -114,7 +119,9 @@ body{
   }
 
   @media only screen and (max-width: $bp-small){
+
     background-image: url(../img/mobile-bg.png);
+    background-attachment: scroll;
   }
 
 
@@ -154,6 +161,7 @@ nav{
     background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.73)),
     url(../img/mobile-iphone-mockup2.png);
     background-blend-mode: screen;
+
     background-size: contain;
     background-repeat:   no-repeat;
     background-position: center bottom;
@@ -180,6 +188,7 @@ nav{
 
   @media only screen and (max-width: $bp-small){
     background-image: url(../img/mobile-audience1.png);
+    background-attachment: scroll;
     height: 100vh;
   }
 
@@ -203,6 +212,11 @@ nav{
   justify-content:center;
 
 
+  @media only screen and (max-width: $bp-small){
+    height: 70rem;
+    overflow: hidden !important;
+  }
+
   @media only screen and (min-width: $bp-smaller) and (max-width: $bp-small) and (max-height: $height-point-2){
     height: 600px;
   }
@@ -213,6 +227,8 @@ nav{
   @media only screen and (min-width: $bp-large-2) and (max-height: 820px){
     height: 850px;
   }
+
+
 
   @media only screen and (max-width: $bp-smaller) and (max-height: $height-point-2){
     height: 600px;
