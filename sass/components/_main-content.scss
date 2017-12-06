@@ -127,9 +127,19 @@
       height: 8rem;
       object-fit: contain;
 
+      @media only screen and (max-width: $bp-small){
+        width: 70px;
+        height: 70px;
+      }
+
+      @media only screen and (max-width: $bp-smaller){
+        width: 60px;
+        height: 60px;
+      }
+
       @media only screen and (max-width: $bp-smallest){
-        width: 6rem;
-        height: 6rem;
+        width: 50px;
+        height: 50px;
       }
     }
 

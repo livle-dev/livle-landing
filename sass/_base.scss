@@ -23,6 +23,19 @@ $bp-smallest: 25em; //400px;
 $height-point: 50em; //800px
 $height-point-1: 46.875em; //750px;
 $height-point-2: 37.5em; //600px;
+//$bp-largest: 1600px; //1600
+//
+//$bp-large-1: 1200px; //1230px
+//$bp-large-2: 1000px; //1000px;
+//
+//$bp-medium: 820px; //820px
+//$bp-small: 750px; //750px; //MObile
+//$bp-smaller: 500px; //500px;
+//$bp-smallest: 400px; //400px;
+//
+//$height-point: 800px; //800px
+//$height-point-1: 750px; //750px;
+//$height-point-2: 600px; //600px;
 
 *{
   margin: 0;
@@ -41,6 +54,7 @@ $height-point-2: 37.5em; //600px;
 }
 html, body {
   width: auto !important;
+
   //overflow-x: hidden !important;
 }
 
@@ -100,6 +114,7 @@ body{
   background-attachment: fixed;
   background-repeat:   no-repeat;
   background-position: center center;
+  overflow: hidden;
 
 
   position: relative;
@@ -222,7 +237,7 @@ nav{
     overflow: hidden !important;
   }
 
-  @media only screen and (min-width: $bp-smaller) and (max-width: $bp-small) and (max-height: $height-point-2){
+  @media only screen and (min-width: $bp-smaller) and ( max-width: $bp-small) and (max-height: $height-point-2){
     height: 600px;
   }
   @media only screen and (min-width: $bp-small) and (max-width: $bp-large-2) and (max-height: $height-point){
