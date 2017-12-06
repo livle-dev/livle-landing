@@ -26,12 +26,18 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
   height: 100%; }
-  @media only screen and (max-width: 76.875em) {
+  @media only screen and (max-width: 90.625em) {
+    html {
+      font-size: 60%; } }
+  @media only screen and (max-width: 84.375em) {
     html {
       font-size: 55%; } }
-  @media only screen and (max-width: 62.5em) {
+  @media only screen and (max-width: 76.875em) {
     html {
       font-size: 50%; } }
+  @media only screen and (max-width: 62.5em) {
+    html {
+      font-size: 45%; } }
   @media only screen and (max-width: 51.25em) {
     html {
       font-size: 40%; } }
@@ -68,11 +74,11 @@ body {
   @media only screen and (min-width: 46.8755em) and (max-width: 62.5em) and (max-height: 50em) {
     .main-section {
       width: 100%;
-      height: 700px; } }
+      height: 600px; } }
   @media only screen and (min-width: 62.5em) and (max-height: 820px) {
     .main-section {
       width: 100%;
-      height: 850px; } }
+      height: 600px; } }
   @media only screen and (max-width: 31.25em) and (max-height: 37.5em) {
     .main-section {
       height: 600px; } }
@@ -133,28 +139,11 @@ nav {
       height: 600px; } }
 
 .footer {
-  width: 100%;
   height: 80rem;
   background-color: black;
   display: flex;
   align-items: center;
   justify-content: center; }
-  @media only screen and (max-width: 46.8755em) {
-    .footer {
-      height: 70rem;
-      overflow: hidden !important; } }
-  @media only screen and (min-width: 31.25em) and (max-width: 46.8755em) and (max-height: 37.5em) {
-    .footer {
-      height: 600px; } }
-  @media only screen and (min-width: 46.8755em) and (max-width: 62.5em) and (max-height: 50em) {
-    .footer {
-      height: 720px; } }
-  @media only screen and (min-width: 62.5em) and (max-height: 820px) {
-    .footer {
-      height: 850px; } }
-  @media only screen and (max-width: 31.25em) and (max-height: 37.5em) {
-    .footer {
-      height: 600px; } }
 
 .logo {
   display: inline-block;
@@ -350,9 +339,18 @@ nav {
       padding-bottom: 5rem;
       padding-right: 15rem;
       margin-right: 10rem; } }
+  @media only screen and (min-width: 46.8755em) {
+    .how-right--first, .how-right--second, .how-right--third {
+      margin-bottom: 0; } }
   @media only screen and (max-width: 51.25em) {
     .how-right--first, .how-right--second, .how-right--third {
       margin-bottom: 0; } }
+  @media only screen and (min-width: 46.8755em) {
+    .how-right--first {
+      margin-top: 10rem; } }
+  @media only screen and (min-width: 46.8755em) {
+    .how-right--third {
+      margin-bottom: 10rem; } }
   .how-right h1 {
     display: flex;
     width: 7.7rem;
@@ -426,17 +424,19 @@ nav {
   font-weight: 200;
   line-height: 1.45;
   letter-spacing: -.12rem; }
+  @media only screen and (max-width: 84.375em) {
+    .footer {
+      font-size: 1.8rem; } }
   @media only screen and (max-width: 76.875em) {
     .footer {
       font-size: 1.8rem;
-      font-weight: 600;
+      font-weight: 300;
       line-height: 1.71;
       letter-spacing: -0.8px;
       color: #ffffff; } }
   .footer-right {
     display: flex;
     flex-direction: column;
-    width: 57.1rem;
     padding: 3rem; }
     @media only screen and (max-width: 76.875em) {
       .footer-right {
@@ -444,8 +444,7 @@ nav {
     @media only screen and (max-width: 46.8755em) {
       .footer-right {
         font-size: 2.5rem;
-        justify-content: center;
-        align-items: stretch; } }
+        justify-content: center; } }
     .footer-right > *:not(:last-child) {
       margin-bottom: 3rem;
       border-bottom: solid 1px #979797;
@@ -508,17 +507,17 @@ nav {
         .footer-right-3__logo {
           width: 12rem; } }
   .footer-left {
-    width: 50rem !important;
-    height: 50rem !important;
-    margin-left: 5rem !important; }
+    width: 50rem;
+    height: 50rem;
+    margin-left: 5rem; }
     @media only screen and (min-width: 51.25em) and (max-width: 62.5em) {
       .footer-left {
-        width: 35rem !important;
-        height: 35rem !important; } }
+        width: 30rem;
+        height: 30rem; } }
     @media only screen and (min-width: 46.8755em) and (max-width: 51.25em) {
       .footer-left {
-        width: 45rem !important;
-        height: 45rem !important; } }
+        width: 45rem;
+        height: 45rem; } }
     @media only screen and (max-width: 46.8755em) {
       .footer-left {
         visibility: hidden;
@@ -561,18 +560,21 @@ nav {
     .main-set {
       transform: translateY(7rem); } }
   .main-set .main-left img {
-    padding-top: 3rem;
     display: inline-block;
     width: 42rem;
-    height: 80rem;
+    height: 75rem;
     margin-right: 10rem; }
-    @media only screen and (max-width: 76.875em) {
+    @media only screen and (max-width: 84.375em) {
       .main-set .main-left img {
         width: 35rem;
         height: auto; } }
+    @media only screen and (max-width: 76.875em) {
+      .main-set .main-left img {
+        width: 29rem;
+        height: auto; } }
     @media only screen and (max-width: 62.5em) {
       .main-set .main-left img {
-        width: 32rem;
+        width: 27rem;
         height: auto;
         margin-left: 4rem;
         margin-right: 5rem; } }
@@ -581,7 +583,7 @@ nav {
         display: none; } }
     @media only screen and (min-width: 46.8755em) {
       .main-set .main-left img {
-        margin-top: 30%; } }
+        margin-top: 25%; } }
   .main-set .main-right > *:not(:first-child) {
     margin-top: 3rem; }
   @media only screen and (max-width: 46.8755em) {
@@ -761,6 +763,12 @@ nav {
       font-family: 'Lato', AppleSDGothicNeo;
       font-weight: 800;
       letter-spacing: -.12rem; }
+      @media only screen and (max-width: 84.375em) {
+        .card-set .card-left__title {
+          font-size: 7rem; } }
+      @media only screen and (max-width: 76.875em) {
+        .card-set .card-left__title {
+          font-size: 7rem; } }
       @media only screen and (max-width: 46.8755em) {
         .card-set .card-left__title {
           font-size: 7rem;
@@ -802,6 +810,9 @@ nav {
       font-size: 3rem;
       font-weight: 200;
       line-height: 1.45; }
+      @media only screen and (max-width: 84.375em) {
+        .card-set .card-left__detail {
+          font-size: 2.7rem; } }
       @media only screen and (max-width: 46.8755em) {
         .card-set .card-left__detail {
           font-size: 3rem;
