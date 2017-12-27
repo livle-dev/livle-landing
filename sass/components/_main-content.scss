@@ -7,11 +7,10 @@
   align-items: center;
   margin: auto 0;
 
+  outline: none;
 
 
-  @media only screen and (min-width: $bp-largest){
-    transform: translateY(7rem);
-  }
+
 
   @media only screen and (max-width: $bp-small){
     transform: translateY(-8rem)
@@ -20,24 +19,31 @@
     transform: translateY(-5rem);
   }
 
+  @media only screen and (min-width: $bp-largest){
+    transform: translateY(7rem);
+  }
 
 
     .main-left{
 
       & img{
-        padding-top: 3rem;
         display:inline-block;
+        //width: 30%;
         width: 42rem;
-        height: 80rem;
+        height: 75rem;
 
 
         margin-right: 10rem;
-        @media only screen and (max-width: $bp-large-1){
+        @media only screen and (max-width: $bp-large-0){
           width: 35rem;
           height: auto;
         }
+        @media only screen and (max-width: $bp-large-1){
+          width: 29rem;
+          height: auto;
+        }
         @media only screen and (max-width: $bp-large-2){
-          width: 32rem;
+          width: 27rem;
           height: auto;
           margin-left: 4rem;
           margin-right: 5rem;
@@ -49,7 +55,7 @@
 
 
         @media only screen and (min-width: $bp-small){
-          margin-top: 30%;
+          margin-top: 25%;
         }
       }
 
@@ -125,9 +131,19 @@
       height: 8rem;
       object-fit: contain;
 
+      @media only screen and (max-width: $bp-small){
+        width: 70px;
+        height: 70px;
+      }
+
+      @media only screen and (max-width: $bp-smaller){
+        width: 60px;
+        height: 60px;
+      }
+
       @media only screen and (max-width: $bp-smallest){
-        width: 6rem;
-        height: 6rem;
+        width: 50px;
+        height: 50px;
       }
     }
 

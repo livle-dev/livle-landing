@@ -59,10 +59,4 @@ $(document).ready(function () {
     },{
         offset: '15%'
     });
-
-    $('.js--wp-2').waypoint(function (direction) {
-        $('.footer-right').addClass('animated slideInUp');
-    },{
-        offset: '15%'
-    });
 });

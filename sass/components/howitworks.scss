@@ -79,8 +79,11 @@
 
 
   @media only screen and (min-width: $bp-largest){
-    padding: 5rem 15rem;
-    margin-right: 15rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    padding-right: 15rem;
+
+    margin-right: 10rem;
   }
 
 
@@ -90,11 +93,26 @@
   &--second,
   &--third{
 
+    @media only screen and (min-width: $bp-small){
+        margin-bottom: 0;
+    }
 
     @media only screen and (max-width: $bp-medium){
       margin-bottom: 0;
     }
 
+  }
+
+  &--first{
+    @media only screen and (min-width: $bp-small){
+      margin-top: 10rem;
+    }
+  }
+  &--third{
+
+    @media only screen and (min-width: $bp-small){
+      margin-bottom: 10rem;
+    }
   }
 
   h1{
@@ -155,6 +173,7 @@
     line-height: 1.45;
     letter-spacing: -1.2px;
     color: #ffffff;
+
 
 
     @media only screen and (max-width: $bp-small){

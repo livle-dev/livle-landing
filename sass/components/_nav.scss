@@ -9,14 +9,17 @@
   @media only screen and (max-width: $bp-small){
     margin-left: 0;
   }
+  @media only screen and (max-width: $bp-smaller){
+    margin-left: 10px;
+    width: 150px;
+    height: auto;
+  }
   @media only screen and (max-width: $bp-smallest){
-    width: 12rem;
+    width: 140px;
     height: auto;
   }
 
-  @media only screen and (max-width: $bp-smaller){
-    margin-left: 2rem;
-  }
+
 
 
 
@@ -26,29 +29,28 @@
 
 //MOBILE_NAVIGATION
 .nav__mobile{
-
+  list-style: none;
   display: flex;
   justify-content: space-between;
-  padding: 3rem;
+  align-items:center;
+  padding: 30px;
 
   @media only screen and (min-width: $bp-small){
     display: none;
   }
+  @media only screen and (max-width: $bp-small){
+    padding: 20px;
+  }
   @media only screen and (max-width: $bp-smaller){
-    padding-top: 1rem;
+    padding-top: 30px;
   }
   @media only screen and (max-width: $bp-smallest){
-    padding: 1rem 1.5rem;
-    align-items:center;
+    padding: 15px 15px;
   }
 
 }
 
-.logo-mobile{
-  @media only screen and (min-width: $bp-small){
 
-  }
-}
 .main-nav__outer-link__mobile{
   margin-right: 4rem;
 
@@ -115,16 +117,16 @@
   &__outer-link:link,
   &__outer-link:visited{
 
+
     text-decoration: none;
     font-size: 2rem;
     font-weight: 400;
     letter-spacing: .3px;
     text-align: center;
     backface-visibility: hidden;
-    padding: 1rem 0;
+    padding: 1.3rem 1.2rem;
 
     display: inline-block;
-    width: 11.3rem;
     border-radius: 15px;
     background-color: var(--aqua-marine);
     color: black;
@@ -134,22 +136,24 @@
 
     margin-right: 3rem;
     @media only screen and (max-width: $bp-small){
-      font-size: 4rem;
+      padding: 1rem 1.3rem;
+      font-size: 25px;
       font-weight: 600;
       margin-right: .5rem;
-
-      transform: translateY(-1rem);
     }
     @media only screen and (max-width: $bp-smaller){
-      font-size: 3rem;
+      padding: 1rem 1rem;
+      font-size: 22px;
       font-weight: 900;
 
       transform: translateY(0);
     }
 
     @media only screen and (max-width: $bp-smallest){
-      width: 9.3rem;
-      height: auto;
+      padding: .8rem .7rem;
+      font-size: 20px;
+      //width: 9.3rem;
+      //height: auto;
       }
   }
 
@@ -163,6 +167,8 @@
   }
 
   &__outer-link::after{
+
+
     content: "";
     display: inline-block;
     height: 100%;
@@ -177,6 +183,7 @@
   }
 
   &__outer-link:hover::after{
+
     transform: scaleX(1.5) scaleY(1.6);
     opacity: 0;
   }
