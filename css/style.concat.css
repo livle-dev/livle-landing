@@ -2301,6 +2301,39 @@ nav {
   .term-sub-heading {
     font-size: 2rem; }
 
+#password-box {
+  width: 552px;
+  mix-blend-mode: hard-light;
+  border-radius: 5px;
+  background-color: #0d3639;
+  box-shadow: 0 34px 24px 0 rgba(0, 0, 0, 0.38), 0 15px 14px 0 rgba(0, 0, 0, 0.27), 0 2px 4px 0 rgba(0, 0, 0, 0.11); }
+  #password-box h1 {
+    margin-top: 60px;
+    margin-bottom: 130px;
+    font-size: 36px;
+    letter-spacing: 1.3px;
+    text-align: center;
+    color: white; }
+  #password-box #form {
+    margin: 0 52px; }
+    #password-box #form input {
+      width: 100%;
+      color: #47efb2;
+      font-size: 22px;
+      padding: 22px 0;
+      background: none;
+      border: none;
+      border-bottom: solid 2px #47efb2; }
+    #password-box #form #submit {
+      width: 100%;
+      font-size: 22px;
+      color: white;
+      letter-spacing: -0.2px;
+      border: none;
+      padding: 31px;
+      border-radius: 3px;
+      background-color: #19e298; }
+
 .carousel {
   position: relative; }
 
