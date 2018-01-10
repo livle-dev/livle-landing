@@ -1,5 +1,10 @@
 $(document).ready(function () {
 
+    $('.carousel').carousel({
+        pause: true,
+        interval: false
+    });
+
     //STICKY NAVAGATION
     $('.js--section-works').waypoint(function(direction){
         if(direction == "down"){
@@ -54,9 +59,16 @@ $(document).ready(function () {
 
 
     //Animations on scroll
-    $('.js--wp-1').waypoint(function (direction) {
+    $('.js--wp-1').waypoint(function(direction) {
         $('.how-right').addClass('animated fadeIn');
     },{
         offset: '15%'
     });
+    $('.js--wp-2').waypoint(function(direction) {
+        $('.ani').addClass('animated pulse');
+    },{
+        offset: '15%'
+    });
+
+
 });

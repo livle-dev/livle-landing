@@ -1,3 +1,5 @@
+<!doctype html>
+
 <html>
 <head>
     <meta charset="UTF-8">
@@ -8,7 +10,7 @@
     <title>Livle: Life is live</title>
     <meta property="og:url" content="http://www.livle.kr">
     <meta property="og:title" content="Life is live">
-    <meta property="og:description" content="축제를 시작하세요. 당신의 삶은 라이브 그 자체입니다.">
+    <meta property="og:description" content="자, 축제를 시작하세요. 당신의 삶은 라이브 그 자체입니다.">
     <meta property="og:image" content="https://s3.ap-northeast-2.amazonaws.com/www.livle.kr/img/main-bg.png">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -38,7 +40,7 @@
      <section class="main-section" id="main">
         <section class="nav__mobile">
             <a href="#main"><img src="img/logo-white-mobile.png" alt="Livle logo" class="logo logo__mobile"></a>
-            <li><a href="#" class="main-nav__outer-link main-nav__outer-link__mobile">Partner</a></li>
+            <li><a href="https://goo.gl/xNAXSS" class="main-nav__outer-link main-nav__outer-link__mobile">Partner</a></li>
         </section>
 
         <nav>
@@ -47,7 +49,7 @@
                 <li><a href="#about" class="main-nav__inner-link">About us</a></li>
                 <li><a href="#how-it-works" class="main-nav__inner-link">How it works</a></li>
                 <li><a href="#contacts" class="main-nav__inner-link">Contact us</a></li>
-                <li><a href="#" class="main-nav__outer-link">Partner</a></li>
+                <li><a href="https://goo.gl/xNAXSS" class="main-nav__outer-link">Partner</a></li>
             </ul>
         </nav>
 
@@ -67,7 +69,9 @@
                     </div>
                     
                     <div class="main-right__icons">
-                        <img src="img/google-play.png" alt="Google Play">
+                        <a href="http://play.google.com/store/apps/details">
+                            <img src="img/google-play.png" alt="Google Play">
+                        </a>
                         <img src="img/app-store.png" alt="Apple Play">
                     </div>
                 </div>
@@ -92,8 +96,7 @@
                     </h2>
                     <span class="how-right--first__details">
                     콘서트에 최적화된 인터페이스를 통해<br>
-                    콘서트 검색과 선택, 입장까지 한번에 가능합니다.<br>
-                    이를 통해 고객은 만족스러운 경험을 할 것입니다.
+                    콘서트 검색과 선택, 입장까지 한번에 가능합니다.
                 </span>
                 </div>
 
@@ -135,8 +138,6 @@
                         <span class="how-right--third__details">
                         라이블에서는 개별 티켓 구매 없이<br>
                         월 멤버십으로 콘서트에 갈 수 있습니다.<br>
-                        이는 새로운 관객들을 콘서트에 연결하는<br>
-                        역할을 할 것입니다.
                     </span>
                     </div>
 
@@ -148,8 +149,8 @@
 
 
 
-<div class="bs-example" id="how-it-works">
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+<div class="bs-example slide" id="how-it-works">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
         <!-- Carousel indicators -->
         <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -223,7 +224,7 @@
     </div>
 </div>
 
-<footer class="footer" id="contacts">
+<footer class="footer js--wp-2" id="contacts">
     <div class="footer-left">
         <div class="map"></div>
     </div>
@@ -240,25 +241,41 @@
         </div>
         <div class="footer-right-2">
             <div class="footer-right-2__mail">
-                메일: contacts@livle.kr
+                메일:&ensp;contacts@livle.kr
             </div>
             <div class="footer-right-2__contacts">
-                연락처: 070-8163-4068
+                연락처:&ensp;070-8163-4068
             </div>
             <div class="footer-right-2__address">
                 주소: 경기도 성남시 분당구 판교로289번길 20, 스타트업캠퍼스 8층
             </div>
+
+
             <div class="footer-right-2__yellow">
-                <img src="img/facebook%20messenger%20logo.png" class="footer-right-2__yellow-icon1">
-                <img src="img/logo_yellow_id.png" class="footer-right-2__yellow-icon2">
+                <a href="https://goo.gl/umvcBL">
+                    <img src="img/facebook%20messenger%20logo.png" class="footer-right-2__yellow-icon1 ani">
+                </a>
+                <img src="img/logo_yellow_id.jpg" class="footer-right-2__yellow-icon2">
                 <div class="footer-right-2__yellow-operating">
-                    <div class="footer-right-2__yellow-operating1">YellowID: @Livle</div>
-                    <div class="footer-right-2__yellow-operating2">운영시간: 09:00 ~ 18:00</div>
+                    <div class="footer-right-2__yellow-operating1">플러스친구:&ensp;@Livle</div>
+                    <div class="footer-right-2__yellow-operating2">운영시간:&ensp;09:00 ~ 18:00</div>
                 </div>
             </div>
         </div>
         <div class="footer-right-3">
-            <div class="footer-right-3__livle">라이블 | 대표자: 최지인 | 사업자등록번호: 391-59-00243 |</div>
+
+            <div class="row button-below-group">
+                <a href="/terms.html" class="button-below">
+                    이용약관
+                </a>
+                <a href="/privacy.html" class="button-below">
+                    개인정보처리방침
+                </a>
+                <a href="/help.html" class="button-below">
+                    도움말&고객지원
+                </a>
+            </div>
+            <div class="footer-right-3__livle">라이블&ensp;|&ensp;대표자:&ensp;최지인&ensp;|&ensp;사업자등록번호:&ensp;391-59-00243 </div>
             <div class="footer-right-3__copyright">Copyright &copy; 2017 by Livle All rights reserved.</div>
             <img srcset="img/logo-white-mobile.png" class="footer-right-3__logo">
         </div>

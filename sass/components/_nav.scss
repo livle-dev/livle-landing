@@ -7,7 +7,9 @@
 
   margin-left: 4rem;
   @media only screen and (max-width: $bp-small){
+    width: 150px;
     margin-left: 0;
+    height: auto;
   }
   @media only screen and (max-width: $bp-smaller){
     margin-left: 10px;
@@ -15,7 +17,7 @@
     height: auto;
   }
   @media only screen and (max-width: $bp-smallest){
-    width: 140px;
+    width: 130px;
     height: auto;
   }
 
@@ -36,13 +38,17 @@
   padding: 30px;
 
   @media only screen and (min-width: $bp-small){
+    padding: 20px;
     display: none;
   }
   @media only screen and (max-width: $bp-small){
-    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-top: 15px;
   }
   @media only screen and (max-width: $bp-smaller){
-    padding-top: 30px;
+    padding-top: 10px;
   }
   @media only screen and (max-width: $bp-smallest){
     padding: 15px 15px;
@@ -84,7 +90,7 @@
   &__inner-link:visited{
     color: #fff;
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 600;
     letter-spacing: .5px;
     text-align: center;
@@ -106,6 +112,7 @@
     }
 
 
+
   }
 
   &__inner-link:active,
@@ -119,7 +126,7 @@
 
 
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 400;
     letter-spacing: .3px;
     text-align: center;
@@ -136,21 +143,21 @@
 
     margin-right: 3rem;
     @media only screen and (max-width: $bp-small){
-      padding: 1rem 1.3rem;
+      padding: .6rem 1.2rem;
       font-size: 25px;
       font-weight: 600;
       margin-right: .5rem;
     }
     @media only screen and (max-width: $bp-smaller){
-      padding: 1rem 1rem;
+      //padding: 1rem 1rem;
       font-size: 22px;
-      font-weight: 900;
+      font-weight: 600;
 
       transform: translateY(0);
     }
 
     @media only screen and (max-width: $bp-smallest){
-      padding: .8rem .7rem;
+      //padding: .8rem .7rem;
       font-size: 20px;
       //width: 9.3rem;
       //height: auto;
